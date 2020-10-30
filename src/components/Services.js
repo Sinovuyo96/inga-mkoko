@@ -15,17 +15,18 @@ function Services() {
     <div className="about">
       <div class="container">
         <div class="row align-items-center my-5">
-          <div class="col-lg-7">
-          <img
+          <div className="img" class="col-lg-7">
+          <img 
               class="img-fluid rounded mb-4 mb-lg-0"
-              src="/images/inga.jpg"
+              src="/images/logo.jpg"
               alt=""
             />
           </div>
-          <div class="col-lg-5">
-            <h1 class="font-weight-light">We Provide the following services:</h1>
-              <ul>
-                
+          <div class="col-lg-5" className="serv">
+            
+              <ul className="offers">
+                <h2 class="font-weight-light">We Provide the following services:</h2>
+                <br/>
                   <ol>-Landscape</ol>
                   <ol>-Weed And Pest Control</ol>
                   <ol>-Lawn Installation And Management</ol>
@@ -39,19 +40,20 @@ function Services() {
               <i class="fab fa-instagram"></i>
               <i class="fab fa-twitter"></i>
             </ul> */}
-           <div class="social">
-          {/* <a href="https://github.com/Sinovuyo96" ><i class="fa fa-github" aria-hidden="true"></i>
-          </a> */}
-          {/*<a href="https://www.instagram.com/official_solani/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>
+            
+            <div class="social">
+          <a className="social" href="https://www.instagram.com/official_solani/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>
           </a>
-          <a href="https://www.facebook.com/sinovuyo.solani.96/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>
+          <a className="social" href="https://www.facebook.com/ingah.mkoko.3/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>
           </a>
-          <a href="https://www.twitter.com/sinovuyo.solani/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>
+          <a className="social" href="https://twitter.com/MkokoIngah" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>
           </a>
-          <a href="https://www.linkedin.com/in/sinovuyo-solani-509647176/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-          */}</div> 
-
+          <a className="social" href="https://twitter.com/MkokoIngah" target="_blank"><i class="fa fa-phone" aria-hidden="true"></i>
+          </a>
+          <a className="social" href="https://twitter.com/MkokoIngah" target="_blank"><i class="fa fa-envelope-square" aria-hidden="true"></i></a>
           </div>
+            </div> 
+          
         </div>
       </div>
     </div>

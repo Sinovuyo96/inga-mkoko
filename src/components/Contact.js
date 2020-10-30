@@ -1,53 +1,88 @@
 // import { faThinkPeaks } from "@fortawesome/free-brands-svg-icons";
 import React from "react";
+import emailjs from 'emailjs-com'
 import "../App.css"
 
+//npm install emailjs-com --save
 
+export default function Contact () {
+  // constructor(props){
+  //   super(props);
+  //   this.state = [{name:''},
+  //   this.state = {email:''},
+  //   this.state = {subject:''},
+  //   this.state = {message:''}]
+  //   this.handleSubmit = this.handleSubmit.bind(this)
+    
+  // }
 
-class Contact extends React.Component {
-  constructor(props){
-    super(props);
-    this.state = [{name:''},
-    this.state = {surname:''},
-    this.state = {message:''}]
-    this.handleSubmit = this.handleSubmit.bind(this)
+  // handleChange(event){
+
+  // }
+
+  // handleSubmit(event){
+  //   alert('submitted: + this.state.Submit')
+  //   event.preventDefault();
+
+  // }
+
+  function sendEmail(e) {
+    e.preventDefault();
+    
+    emailjs.sendForm('gmail', 'template_7eu991h', e.target,'user_3gINCvpf8lPhdGJCiDhhU')
+    .then((result) => {
+      console.Console.log(result.text);
+
+    }, (error) => {
+      console.log(error.text);
+    });
+    e.target.reset()
     
   }
 
-  handleChange(event){
-
-  }
-
-  handleSubmit(event){
-    alert('submitted: + this.state.Submit')
-    event.preventDefault();
-
-  }
-
-
-  render(){
     return(
-      <form>
-        Name
-        <input placeholder="type name" className="inputs" type ="text" value={this.state.name} onChange={this.handleChange()}>
+      
+      <div>
+        <form onSubmit={sendEmail}>
+        
+        <input placeholder="Name" className="inputs" type ="text" >
         </input>
         <br/>
 
-        Surname
-        <input placeholder="type surname" className="inputs" type="text" value={this.state.surname} onChange={this.handleChange}>
+        
+        <input placeholder="Email" className="inputs" type="text" >
         </input>
         <br/>
+
+        <input placeholder="Subject" className="inputs" type="text" >
+        </input>
+        <br/>
+
         <label>
-          <input type="text" placeholder="message" className="inputs" value={this.state.message} onChange={this.handleChange}>
-          </input>
+          <textarea type="text"  placeholder="Message" className="inputs" >
+          </textarea>
         </label>
+        <br/>
 
         <input type="submit" className="sbtn" value="Submit">
         </input>
       </form>
+      <div>
+      <div className="cont" class="social">
+          <a className="social" href="https://www.instagram.com/official_solani/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a className="social" href="https://www.facebook.com/ingah.mkoko.3/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+          <a className="social" href="https://twitter.com/MkokoIngah" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a className="social" href="https://twitter.com/MkokoIngah" target="_blank"><i class="fa fa-phone" aria-hidden="true"></i>
+          </a>
+          <a className="social" href="https://twitter.com/MkokoIngah" target="_blank"><i class="fa fa-envelope-square" aria-hidden="true"></i></a>
+          </div>
+      </div>
+      </div>
     );
   }
-}
 
 
 //   constructor(props) {
@@ -129,4 +164,3 @@ class Contact extends React.Component {
 //   );
 // }
 
-export default Contact
