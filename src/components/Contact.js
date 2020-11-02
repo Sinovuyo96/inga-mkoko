@@ -2,6 +2,7 @@
 import React from "react";
 import emailjs from 'emailjs-com'
 import "../App.css"
+// const [loader] = useState(false);
 
 //npm install emailjs-com --save
 
@@ -66,6 +67,14 @@ export default function Contact () {
 
         <input type="submit" className="sbtn" value="Submit">
         </input>
+
+        
+      {/* <button
+        type="submit"
+        style={{ background: loader ? "#ccc" : " rgb(2, 2, 110)" }}
+      >
+        Submit
+      </button> */}
       </form>
       <div>
       <div className="cont" class="social">
