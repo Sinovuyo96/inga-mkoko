@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-size: 15px;
   
   /* background-image: url(/images/logo.jpg); */
 }
@@ -75,6 +76,8 @@
 .serv{
   text-align: justify;
   width: 100%;
+  margin: 0;
+  padding: 0;
 
 }
 
@@ -87,9 +90,16 @@
   width: 100%;
 }
 
-p,ol{
+p{
   
-  padding: 0 50px 0px 50px;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+ul{
+  float: none;
+  display: inline;
+  clear: left;
 }
 
 .App-link {
@@ -105,20 +115,83 @@ p,ol{
   }
 }
 
+ul.navbar-nav.ml-auto{
+  margin-left: 0;
+  padding: 0;
+}
 
+.ml-auto, .mx-auto{
+  margin: 0;
+  padding: 0;
+  margin-left: 0;
+}
+
+.ml-auto{
+  margin-left: 0;
+}
+
+.navbar-nav{
+  margin-left: 0;
+}
+
+.navbar-nav .ml-auto{
+  margin-left: 0;
+}
+ul.navbar-nav, .ml-auto{
+  margin-left: 0;
+  margin: 0;
+}
 ul{
 
-  font-size: 15px ;
+  font-size: 25px ;
   font-family: sans-serif;
-  padding: 10px;
-  margin-top: 40px;
+  text-align: center;
+  float: none;
+  margin: 0;
+  padding: 0;
+  
 
 
 }
 
-.nav{
-  float: left;
+li{
+  clear: left;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+}
 
+/* h3{
+  font-size: 20px;
+  font-weight: bold;
+} */
+
+ol{
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  align-items: center;
+}
+
+a{
+  align-items: center;
+  clear: left;
+  float: none;
+  justify-content: center;
+}
+
+.nav{
+  float: none;
+  clear: left;
+
+}
+
+.navbar{
+  width: 100%;
+  justify-content: center;
 }
 
 body{
@@ -134,15 +207,17 @@ body{
 } */
 
 
-h2,h1{
-  font-size: 12px;
-   font-weight: bold; 
+h2,h1,h3{
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+   /* font-weight: bold;  */
    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-h1{
+/* h1{
   font-size: 12px;
    font-weight: bold; 
-}
+} */
 
 .social{
 
@@ -170,196 +245,105 @@ h1{
 } */
 
 
-@media screen and (max-width: 700px){
-  .sbtn{
-    background: red;
-  }
-  .social{
-    width: 100%;
-  }
+.logo{
+  float: left;
+  text-indent: -100000px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 1px;
+  margin: 2px;
 }
 
-@media screen and (max-width: 400px){
-  .sbtn{
-    width: 20%;
-  }
-  .social{
-    width: 80%;
+/* TABLET media query */
+ /* @media screen and (max-width: 768px){
 
-  }
-}
-
-/*iphone 5 screen size*/
-@media screen and (max-width: 320px){
-  .sbtn{
-    width: 20%;
-  }
   .social{
     width: 100%;
-
+    margin-top: 350px;
   }
-  h2,h1{
-    font-size: 12px;
-     font-weight: bold; 
+  h2{
+    font-size: 30px;
   }
-  /* h1{
-
-    font-size: 10px ;
-    padding: 10px;
-   font-weight: bold;
-  
-  } */
-  ol{
-    font-size: 11px;
-    padding: 1px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
-  }
-  .inputs{
-    margin:20px;
-  }
-  .App{
-    height: 100%;
-    width: 100%;
-  }
-  body{
-    height: 100%;
-  }
-}
-
-/*iphone 6/7/8 plus*/
-@media screen and (min-width: 414px){
-  .social{
-  width: 100%;  
-  margin-top: 150px;  
-  /* margin-bottom: 20px;  */
-  }
-  
-  .cont{
-    width: 100%;
-    
-  }
-}
-
-/* iphone 6/7/8*/
-@media screen and (min-width: 375px){
-  .social{
-  width: 100%;  
-  margin-top: 150px;  
-  /* margin-bottom: 20px;  */
-  }
-  
-  .cont{
-    width: 100%;
-    
-  }
-}
-/*Galaxy s5*/
-@media screen and (min-width: 360px){
-  .social{
-  width: 100%;  
-  margin-top: 40px;  
-  /* margin-bottom: 20px;  */
-  }
-  
-  .cont{
-    width: 100%;
-    
-  }
-}
-
-/*iphone X*/
-@media screen and (min-width: 375px){
-  .social{
-    flex: none;
-  margin-top: 250px;  
-  /* margin-bottom: 20px;  */
-  }
-  .serv{
-    width: 375px;
-  }
-  
-  .cont{
-    width: 100%;
-    
-  }
-}
-
-/*ipad pro*/
-@media screen and (min-width: 375px){
-  .social{
-  width: 100%;  
-  margin-top: 650px;  
-  /* margin-bottom: 20px;  */
-  }
-  
-  .cont{
-    width: 100%;
-    
-  }
-}
-
-/*ipad pro*/
-@media screen and (min-width: 280px){
-  .social{
-  width: 100%;  
-  padding: 10px;
-  margin-top: 150px;  
-  /* margin-bottom: 20px;  */
-  }
-  
-  .cont{
-    width: 100%;
-    
-  }
-}
-
-/*surface duo*/
-@media screen and (min-width: 360px){
-  .social{
-  width: 100%;  
-  padding: 10px;
-  margin-top: 50px;  
-  /* margin-bottom: 20px;  */
-  }
-  
-  .cont{
-    width: 100%;
-    
-  }
-}
-
-/* pixel 2 screen*/
-@media screen and (min-width: 411px){
-  .social{
-  width: 100%;  
-  padding: 10px;
-  margin-top: 90px;  
-  /* margin-bottom: 20px;  */
-  }
-  
-  .cont{
-    width: 100%;
-    
-  }
-}
-
-
-/* pixel 2 XL screen*/
-@media screen and (min-width: 411px){
-  .social{ 
-  padding: 10px;
-  margin-top: 210px;  
-  /* margin-bottom: 20px;  */
-  }
-
-  body{
+  .navigation {
+    float: left;
+    width:100%;
     margin: 0;
     padding: 0;
   }
-  
-  .cont{
+  .nav {
+    float: left;
+    margin: 200px 0 0 0;
+    padding: 0;
+    width: 50px;
+  }
+
+  .hom{
     width: 100%;
-    
+    margin-top:20px;
+  }
+
+  #navbarResponsive{
+    text-align: justify;
+    align-items: center;
+    width: 20%;
+  }
+
+navbarResponsive{
+  align-items: center;
+  width: 50px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav{
+  clear: left;
+  float: none;
+  width: 100%;
+}
+
+
+a{
+  align-items: center;
+  clear: left;
+  float: none;
+}
+
+.navbar-nav .nav-link{
+  padding: 0;
+  margin: 0;
+  clear: left;
+  float: none;
+  align-items: center;
+  display: inline;
+}
+
+}  */
+
+@media screen and (max-width: 1024px){
+  /* a{
+    align-items: center;
+    clear: left;
+    float: none;
+  }
+  
+  .navbar-nav .nav-link{
+    padding: 0;
+    margin: 0;
+    clear: left;
+    float: none;
+    align-items: center;
+    display: inline;
+  }
+
+  .navbar-expand-lg .navbar-collapse{
+    align-items: center;
+  } */
+
+  /* .social{
+    margin-bottom: 160px;
+  } */
+  li{
+    font-size: 20px;
   }
 }

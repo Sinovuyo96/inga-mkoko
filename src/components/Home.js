@@ -19,10 +19,10 @@ function Home() {
             {/* <h1 class="font-weight-light">Home</h1> */}
             <h2>About Company</h2>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              We are a company that specializes in horticulture and diversity of plantings, 
+              Seeding and Flowering. We cater for different services from the above mentioned. We seek 
+              success on every job that we do, we have worked with different clients, with different project
+               in different conditions, we cater for people who need Maintenance with plants, weed Maintenance.
             </p>
             <div>
             <div class="social">

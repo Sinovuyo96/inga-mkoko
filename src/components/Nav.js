@@ -5,25 +5,10 @@ import "../App.css"
 function Nav(props) {
   return (
     <div className="navigation">
-      <nav className="nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-          <Link class="navbar-brand" to="/">
-            Inga & Esethu
-          </Link>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarResponsive"
-            aria-controls="navbarResponsive"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li
+      <nav className="nav" class="navbar navbar-expand-lg navbar-dark bg-dark">       
+          {/* <div class="collapse navbar-collapse" id="navbarResponsive"> */}
+            <ul className="list" class="navbar-nav ml-auto">
+              <li className="list"
                 class={`nav-item  ${
                   props.location.pathname === "/" ? "active" : ""
                 }`}
@@ -35,7 +20,7 @@ function Nav(props) {
               </li>
               <li
                 class={`nav-item  ${
-                  props.location.pathname === "/about" ? "active" : ""
+                  props.location.pathname === "/services" ? "active" : ""
                 }`}
               >
                 <Link class="nav-link" to="/services">Our
@@ -52,8 +37,7 @@ function Nav(props) {
                 </Link>
               </li>
             </ul>
-          </div>
-        </div>
+          {/* </div> */}
       </nav>
     </div>
   );
