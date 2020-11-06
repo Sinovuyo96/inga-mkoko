@@ -27,18 +27,30 @@ export default function Contact () {
 
   // }
 
+  // function sendEmail(e) {
+  //   e.preventDefault();
+    
+  //   emailjs.sendForm('gmail', 'template_7eu991h', e.target,'user_3gINCvpf8lPhdGJCiDhhU')
+  //   .then((result) => {
+  //     console.Console.log(result.text);
+
+  //   }, (error) => {
+  //     console.log(error.text);
+  //   });
+  //   e.target.reset()
+    
+  // }
+
   function sendEmail(e) {
     e.preventDefault();
-    
-    emailjs.sendForm('gmail', 'template_7eu991h', e.target,'user_3gINCvpf8lPhdGJCiDhhU')
-    .then((result) => {
-      console.Console.log(result.text);
 
-    }, (error) => {
-      console.log(error.text);
-    });
-    e.target.reset()
-    
+    emailjs.sendForm('service_6x6pm3u', 'template_7eu991h', e.target, 'user_3gINCvpf8lPhdGJCiDhhU')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset()
   }
 
     return(
@@ -46,21 +58,21 @@ export default function Contact () {
       <div>
         <form onSubmit={sendEmail}>
         
-        <input placeholder="Name" className="inputs" type ="text" >
+        <input name="name" placeholder="Name" className="inputs" type ="text" >
         </input>
         <br/>
 
         
-        <input placeholder="Email" className="inputs" type="text" >
+        <input name="email" placeholder="Email" className="inputs" type="text" >
         </input>
         <br/>
 
-        <input placeholder="Subject" className="inputs" type="text" >
+        <input name="subject" placeholder="Enter Subject" className="inputs" type="text" >
         </input>
         <br/>
 
         <label>
-          <textarea type="text"  placeholder="Message" className="inputs" >
+          <textarea type="text" placeholder="Your Message"  name="message" className="inputs" >
           </textarea>
         </label>
         <br/>
