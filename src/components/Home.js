@@ -1,5 +1,6 @@
 import React from "react";
-
+import ImageSlider from './ImageSlider'
+import "../App.css"
 
 
 
@@ -25,6 +26,16 @@ function Home() {
                in different conditions, we cater for people who need Maintenance with plants, weed Maintenance.
             </p>
             <div>
+              <h3>kindly look at our work:</h3>
+            {/* <img className="img"
+              
+              src="/images/work.jpg"
+              alt=""
+            />
+            </div>
+            <div> */}
+            <ImageSlider/>
+
             <div class="social">
           <a className="social" href="https://www.instagram.com/official_solani/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>
           </a>

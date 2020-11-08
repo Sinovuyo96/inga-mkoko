@@ -1,39 +1,39 @@
-import React, {useState} from "react";
-//import SliderComponent from './SliderComponent.js'
-//import {css,jsx} from "@emotion/core"
+// import React, {useState} from "react";
+// import SliderComponent from './SliderComponent.js'
+// import Slide from './Slide'
 
-// const Slider = ({content}) = ()=>{
-// <div>
-//     css={css`
-//         height:100%;
-//     width:100%; 
-//     background-image:url(`${content}`);
-//     backgroung-size:cover;
-//     background-repeat: no-repeat;
-//     backgroud-position:center;
-//     `}
+// /**
+//  * @function Slider
+//  */
 
-// </div>
-// }
+//  const Slider = () => {
+//      const getWidth =() => Window.innerWidth
 
-/**
- * @function Slider
- */
+//      const  [setState, useState] = useState({
+//          translate : 0;
+//          transition: 0.45;
+//      })
 
- const Slider = () => {
-     const getWidth =() => Window.innerWidth
+//      const {translate, transition} = state
+//      return(
+//          <div css = {SliderCSS}>
+//              <SliderComponent
+//              translate={translate}
+//              transition={transition}
+//              width ={getWidth()}
+//              >
+//             <Slide/>
+//             </SliderComponent>
+//          </div>
+//      )
+//  }
 
-     const  [setState, useState] = useState({
-         translate : 0;
-         transition: 0.45;
-     })
+//  const SliderCSS =css`
+//  position: relative;
+//  height:100%;
+//  width:100vw;
+//  margin: 0 auto;
+//  overflow: hidden;
+//  `
 
-     const {translate, transition} = state
-     return(
-         <div>
-            
-         </div>
-     )
-
- }
 // export default Slider

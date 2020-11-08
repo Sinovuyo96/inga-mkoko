@@ -47,6 +47,7 @@ export default function Contact () {
     emailjs.sendForm('service_6x6pm3u', 'template_7eu991h', e.target, 'user_3gINCvpf8lPhdGJCiDhhU')
       .then((result) => {
           console.log(result.text);
+          alert("Message has been Submitted");
       }, (error) => {
           console.log(error.text);
       });
@@ -56,26 +57,22 @@ export default function Contact () {
     return(
       
       <div>
-        <form onSubmit={sendEmail}>
+        <form className="form" onSubmit={sendEmail}>
+        <h4>Please Contact Us </h4>
+
+        {/* <label>Name</label> */}
+        <input name="name" placeholder="Name" className="inputs" type ="text"/>
+
+        {/* <label>Email</label> */}
+        <input name="email" placeholder="Email" className="inputs" type="text"/>
+ 
+          {/* <label>Subject</label> */}
+        <input name="subject" placeholder="Enter Subject" className="inputs" type="text"/>
+     
+
+        {/* <label>Message</label> */}
+          <textarea type="text" placeholder="Your Message"  name="message" className="inputs"/>
         
-        <input name="name" placeholder="Name" className="inputs" type ="text" >
-        </input>
-        <br/>
-
-        
-        <input name="email" placeholder="Email" className="inputs" type="text" >
-        </input>
-        <br/>
-
-        <input name="subject" placeholder="Enter Subject" className="inputs" type="text" >
-        </input>
-        <br/>
-
-        <label>
-          <textarea type="text" placeholder="Your Message"  name="message" className="inputs" >
-          </textarea>
-        </label>
-        <br/>
 
         <input type="submit" className="sbtn" value="Submit">
         </input>

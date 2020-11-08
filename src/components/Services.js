@@ -17,7 +17,7 @@ function Services() {
           </div>
           <div class="col-lg-5" className="serv">
              <ul className="offers">
-              <h3 class="font-weight-light">We Provide the following services:</h3>
+              <h3 class="font-weight-light">We offer the following services:</h3>
               <br/>
                 <ol>-Landscape</ol>
                 <ol>-Weed And Pest Control</ol>

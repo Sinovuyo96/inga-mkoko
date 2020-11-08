@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 .App {
   text-align: center;
   font-size: 15px;
@@ -21,45 +22,96 @@
   }
 }
 
-/* .img{
-  height: 100%;
-  width: 100%;
-  margin: 50px;
-} */
-
-/*Media Queries*/
-
-
-/* 
-.social{
-  font-size:40px;
-  margin: 90px;
-  padding:90px;
-} */
-
-.inputs{
-  font-size: 20px;
-  display: inline;
-  text-align: justify;
-  justify-content: center;
-  margin-top: 50px;
-  padding: 5px;
-  align-items: center;
-  
-
-} 
-.sbtn{
-  text-align: center;
-  align-items: center;
-  display: inline;
-  justify-content: center;
-  margin: 10px;
-  text-align: justify;
-  
+input,textarea, label{
+  font-family: "inter",sans-serif;
 }
 
-.sbtn::before{
-  color: #282c34;
+
+.form {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  /* text-align: justify; */
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+} 
+
+.form> label {
+  padding-bottom: 5px;
+  color:rgb(0,0, 32);
+  font-weight: bold;
+
+}
+.form > label{
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  /* max-width: 400px; */
+  /* min-width: 100px; */
+
+}
+
+.form> textarea {
+  height: 100px;
+  max-width: 400px;
+  max-height: 100px;
+
+}
+
+.form> input,textarea{
+  padding: 20px;
+  border-radius: 3px;
+
+  margin-bottom: 20px;
+  border: 1px solid lightgray;
+
+  background: #fff;
+  font-size: 16px;
+  color:rgb(0, 0, 32);
+  outline: none;
+}
+
+.form > input:focus,
+ textarea:focus{
+  border: 1px solid rgb(0, 0, 196);
+}
+
+.form > .sbtn{
+  padding: 20px;
+  border: none;
+  background-color: rgb(2, 2, 110);
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-top: 10px;
+}
+ol{
+  margin: 0;
+  margin-top: 0;
+  padding: 0;
+}
+h3{
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  font-weight: 500;
+  font-family: "inter", sans-serif;
+  color:rgb(0,0, 32);
+}
+h4{
+  font-size: 20px;
+}
+ h2,h4 {
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-family: "inter", sans-serif;
+  color:rgb(0,0, 32);
 }
 
 .App-header {
@@ -92,6 +144,7 @@
 
 p{
   
+  font-family: "inter", sans-serif;
   font-size: 16px;
   padding: 0;
   margin: 0;
@@ -124,6 +177,7 @@ ul.navbar-nav.ml-auto{
   margin: 0;
   padding: 0;
   margin-left: 0;
+
 }
 
 .ml-auto{
@@ -140,18 +194,17 @@ ul.navbar-nav.ml-auto{
 ul.navbar-nav, .ml-auto{
   margin-left: 0;
   margin: 0;
+  
 }
 ul{
 
-  font-size: 25px ;
-  font-family: sans-serif;
+  font-size: 20px ;
+  font-family: "inter",sans-serif;
   text-align: center;
   float: none;
   margin: 0;
   padding: 0;
   
-
-
 }
 
 li{
@@ -174,6 +227,7 @@ ol{
   padding: 0;
   font-size: 16px;
   align-items: center;
+  font-family: "inter", sans-serif;
 }
 
 a{
@@ -189,9 +243,16 @@ a{
 
 }
 
+.nav-link{
+  margin: 0;
+  padding:0;
+}
+
 .navbar{
   width: 100%;
   justify-content: center;
+  min-height: 20px;
+  height: 100px;
 }
 
 body{
@@ -207,7 +268,7 @@ body{
 } */
 
 
-h2,h1,h3{
+h1{
   font-size: 18px;
   padding: 0;
   margin: 0;
@@ -254,96 +315,126 @@ h2,h1,h3{
   margin: 2px;
 }
 
-/* TABLET media query */
- /* @media screen and (max-width: 768px){
+.img{
+  height: 400px;
+  width: 88%;
+  padding: 40px;
+  cursor: pointer;
+}
 
+/* Media queries */
+
+/*iphone 6/7/8*/
+@media screen and (min-width: 375px){
   .social{
-    width: 100%;
-    margin-top: 350px;
-  }
-  h2{
-    font-size: 30px;
-  }
-  .navigation {
-    float: left;
-    width:100%;
-    margin: 0;
-    padding: 0;
-  }
-  .nav {
-    float: left;
-    margin: 200px 0 0 0;
-    padding: 0;
-    width: 50px;
-  }
-
-  .hom{
-    width: 100%;
-    margin-top:20px;
-  }
-
-  #navbarResponsive{
-    text-align: justify;
-    align-items: center;
-    width: 20%;
-  }
-
-navbarResponsive{
-  align-items: center;
-  width: 50px;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-
-nav{
-  clear: left;
-  float: none;
-  width: 100%;
-}
-
-
-a{
-  align-items: center;
-  clear: left;
-  float: none;
-}
-
-.navbar-nav .nav-link{
-  padding: 0;
-  margin: 0;
-  clear: left;
-  float: none;
-  align-items: center;
-  display: inline;
-}
-
-}  */
-
-@media screen and (max-width: 1024px){
-  /* a{
-    align-items: center;
-    clear: left;
-    float: none;
+  width: 100%;  
+  margin-top: 10px;  
+  /* margin-bottom: 20px;  */
   }
   
-  .navbar-nav .nav-link{
-    padding: 0;
+  .img{
+    height: 400px;
+    width: 88%;
+    padding: 40px;
+    cursor: pointer;
     margin: 0;
-    clear: left;
-    float: none;
-    align-items: center;
-    display: inline;
-  }
-
-  .navbar-expand-lg .navbar-collapse{
-    align-items: center;
-  } */
-
-  /* .social{
-    margin-bottom: 160px;
-  } */
-  li{
-    font-size: 20px;
+    scroll-behavior: smooth;
   }
 }
+
+/* image slider */
+
+
+
+.container{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide images by default */
+.mySlides{
+  display: none;
+}
+
+/* NEXT and PREVIOUS Buttons */
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* position NEXT button to the right */
+
+.next{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* hover the dots */
+
+.prev:hover, .next:hover{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption Text */
+
+.text{
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* dots indicators 
+*/
+.dot{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.actve, .dot:hover{
+  background-color: #717171;
+
+}
+
+/* Fading Animation */
+.fade{
+  -webkit-animation-name:fade ;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration:1.5s ;
+}
+
+@-webkit-keyframes fade{
+  from{opacity: .4;}
+  to{opacity: 1;}
+}
+
+@keyframes fade {
+  from{opacity: .4;}
+  to{opacity: 1;}
+}
+
+.dots{
+  text-align: center;
+}
+
