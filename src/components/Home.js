@@ -27,13 +27,7 @@ function Home() {
             </p>
             <div>
               <h3>kindly look at our work:</h3>
-            {/* <img className="img"
-              
-              src="/images/work.jpg"
-              alt=""
-            />
-            </div>
-            <div> */}
+            
             <ImageSlider/>
 
             <div class="social">
