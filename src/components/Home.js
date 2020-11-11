@@ -28,7 +28,7 @@ function Home() {
             <div>
               <h3>kindly look at our work:</h3>
             
-            <ImageSlider/>
+            {/* <ImageSlider/> */}
 
             <div class="social">
           <a className="social" href="https://www.instagram.com/official_solani/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>
