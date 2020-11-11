@@ -1,8 +1,5 @@
 import React from "react";
 
-
-
-
 function Services() {
   return (
     <div className="home">
@@ -41,10 +38,6 @@ function Services() {
           </div>
             </div>
             
-            {/* <span className="fa-layers fa-fw">
-  <FontAwesomeIcon icon="square" color="green" />
-  <FontAwesomeIcon icon="check" inverse transform="shrink-6" />
-</span> */}
           </div>
         </div>
       </div>

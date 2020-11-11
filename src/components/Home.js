@@ -42,11 +42,7 @@ function Home() {
           <a className="social" href="https://twitter.com/MkokoIngah" target="_blank"><i class="fa fa-envelope-square" aria-hidden="true"></i></a>
           </div>
             </div>
-            
-            {/* <span className="fa-layers fa-fw">
-  <FontAwesomeIcon icon="square" color="green" />
-  <FontAwesomeIcon icon="check" inverse transform="shrink-6" />
-</span> */}
+         
           </div>
         </div>
       </div>

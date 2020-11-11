@@ -7,39 +7,7 @@ import "../App.css"
 //npm install emailjs-com --save
 
 export default function Contact () {
-  // constructor(props){
-  //   super(props);
-  //   this.state = [{name:''},
-  //   this.state = {email:''},
-  //   this.state = {subject:''},
-  //   this.state = {message:''}]
-  //   this.handleSubmit = this.handleSubmit.bind(this)
-    
-  // }
-
-  // handleChange(event){
-
-  // }
-
-  // handleSubmit(event){
-  //   alert('submitted: + this.state.Submit')
-  //   event.preventDefault();
-
-  // }
-
-  // function sendEmail(e) {
-  //   e.preventDefault();
-    
-  //   emailjs.sendForm('gmail', 'template_7eu991h', e.target,'user_3gINCvpf8lPhdGJCiDhhU')
-  //   .then((result) => {
-  //     console.Console.log(result.text);
-
-  //   }, (error) => {
-  //     console.log(error.text);
-  //   });
-  //   e.target.reset()
-    
-  // }
+ 
 
   function sendEmail(e) {
     e.preventDefault();
